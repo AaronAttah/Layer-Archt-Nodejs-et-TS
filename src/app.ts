@@ -47,6 +47,9 @@ app.get("/health", (req, res) => {
 })
 
 app.use("/api/v2/", routes);
+app.get('/', (req, res) =>{
+  res.send("health check............ 🥰  woooolaah")
+})
 
 /**
  * error Handlers
